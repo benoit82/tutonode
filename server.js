@@ -1,15 +1,15 @@
 var http = require('http');
-var url = require('url');
-var querystring = require('querystring');
 
 var server = http.createServer(function (req, res) {
-    var params = querystring.parse(url.parse(req.url).query);
-    res.writeHead(200, { "Content-Type": "text/plain" });
-    if('prenom' in params && 'nom' in params) {
-        res.write('vous vous appelez ' + params['prenom'] + '  ' + params['nom']);
-    } else {
-        res.write('Vous devez bien avoir un prénom et un nom, non ?');
-    }
+    res.writeHead(200);
+    res.write('Salut tout le monde !');
     res.end();
 });
+
+server.on('close',() => {
+    console.log('Bye bye...');
+});
+
 server.listen(8080);
+
+server.close(); // arrete le server
