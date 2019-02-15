@@ -36,5 +36,4 @@ app.get('/', (req, res) => {
     res.render('todolist.ejs', { tasks: req.session.tasks });
 });
 
-
 app.listen(8080);
