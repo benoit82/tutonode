@@ -32,6 +32,6 @@ app.get('/', (req, res) => {
     .use((req, res, next) => {
         res.setHeader('Content-Type', 'text/plain');
         res.status(404).send('Page introuvable.');
-    })
+    });
 
-    .listen(8080);
+app.listen(8080);

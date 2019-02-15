@@ -1,0 +1,13 @@
+<% if (tasks && tasks.length > 0) { %>
+<h1>Ma todolist</h1>
+<ul>
+    <% for (var i = 0 ; i < tasks.length ; i++) { %>
+    <li><a href="/delete/<%= i %>">X</a> <%= tasks[i] %></li>
+    <% } %>
+</ul>
+<% } %>
+
+<form action="/add" method="post">
+    <label for="task">Que dois-je faire ? <input type="text" name="task"></label>
+    <button type="submit">Valider</button>
+</form>
