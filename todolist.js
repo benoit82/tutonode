@@ -21,7 +21,7 @@ app.post('/add', urlencodedParser, (req,res) => {
     if (req.body.task && req.body.task.length > 0) {
         req.session.tasks.push(req.body.task);
     }
-    res.render('todolist.ejs', { tasks: req.session.tasks });
+    res.redirect('/');
 
 });
 
@@ -29,7 +29,7 @@ app.get('/delete/:id', (req, res) => {
     if (!isNaN(req.params.id)) {
         req.session.tasks.splice(req.params.id, 1);
     }
-    res.render('todolist.ejs', { tasks: req.session.tasks });
+    res.redirect('/');
 });
 
 app.get('/', (req, res) => {
