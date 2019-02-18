@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <h1>Communication avec socket.io !</h1>
+    <h1>Communication avec socket.io</h1>
 
     <p id="dial"></p>
 
@@ -17,10 +17,14 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script>
+        var pseudo = prompt('Quel est votre pseudo ?');
         var socket = io.connect('http://localhost:8080');
+
+        socket.emit('petit_nouveau', pseudo);
+
         socket.on('message', (message) => {
-            document.getElementById('dial').innerText = message;
-        })
+            document.getElementById('dial').innerText += message + '\n';
+        });
 
         $('#poke').click(() => {
             socket.emit('message', 'Salut serveur, ça va ?');
