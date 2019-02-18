@@ -1,14 +1,31 @@
 {
-    "name": "mon-app",
-    "version": "0.1.0",
-    "dependencies": {
-        "body-parser": "^1.18.3",
-        "cookie-session": "^2.0.0-beta.3",
-        "ejs": "^2.6.1",
-        "express": "^4.16.4",
-        "markdown": "~0.5",
-        "morgan": "^1.9.1",
-        "serve-favicon": "^2.5.0",
-        "socket.io": "^2.2.0"
-    }
+  "name": "tutonodejs",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000t\u0000u\u0000t\u0000o\u0000 \u0000n\u0000o\u0000d\u0000e\u0000 \u0000J\u0000S\u0000\r\u0000 \u0000\r\u0000 \u0000*\u0000s\u0000u\u0000i\u0000t\u0000e\u0000 \u0000d\u0000u\u0000 \u0000c\u0000o\u0000u\u0000r\u0000s\u0000 \u0000�\u0000 \u0000r\u0000e\u0000p\u0000r\u0000e\u0000n\u0000d\u0000r\u0000e\u0000 \u0000[\u0000n\u0000e\u0000x\u0000t\u0000 \u0000:\u0000 \u0000C\u0000o\u0000m\u0000m\u0000u\u0000n\u0000i\u0000q\u0000u\u0000e\u0000r\u0000 \u0000a\u0000v\u0000e\u0000c\u0000 \u0000p\u0000l\u0000u\u0000s\u0000i\u0000e\u0000u\u0000r\u0000s\u0000 \u0000c\u0000l\u0000i\u0000e\u0000n\u0000t\u0000s\u0000]\u0000:\u0000*\u0000\r\u0000 \u0000\r\u0000 \u0000h\u0000t\u0000t\u0000p\u0000s\u0000:\u0000/\u0000/\u0000o\u0000p\u0000e\u0000n\u0000c\u0000l\u0000a\u0000s\u0000s\u0000r\u0000o\u0000o\u0000m\u0000s\u0000.\u0000c\u0000o\u0000m\u0000/\u0000f\u0000r\u0000/\u0000c\u0000o\u0000u\u0000r\u0000s\u0000e\u0000s\u0000/\u00001\u00000\u00005\u00006\u00007\u00002\u00001\u0000-\u0000d\u0000e\u0000s\u0000-\u0000a\u0000p\u0000p\u0000l\u0000i\u0000c\u0000a\u0000t\u0000i\u0000o\u0000n\u0000s\u0000-\u0000u\u0000l\u0000t\u0000r\u0000a\u0000-\u0000r\u0000a\u0000p\u0000i\u0000d\u0000e\u0000s\u0000-\u0000a\u0000v\u0000e\u0000c\u0000-\u0000n\u0000o\u0000d\u0000e\u0000-\u0000j\u0000s\u0000/\u00001\u00000\u00005\u00007\u00008\u00002\u00005\u0000-\u0000s\u0000o\u0000c\u0000k\u0000e\u0000t\u0000-\u0000i\u0000o\u0000-\u0000p\u0000a\u0000s\u0000s\u0000e\u0000z\u0000-\u0000a\u0000u\u0000-\u0000t\u0000e\u0000m\u0000p\u0000s\u0000-\u0000r\u0000e\u0000e\u0000l\u0000#\u0000/\u0000i\u0000d\u0000/\u0000r\u0000-\u00001\u00000\u00005\u00008\u00009\u00006\u00003\u0000",
+  "main": "middleware.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "markdown": "^0.5.0",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon middleware.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benoit82/tutonode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benoit82/tutonode/issues"
+  },
+  "homepage": "https://github.com/benoit82/tutonode#readme"
 }
